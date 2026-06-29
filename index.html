@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download in corso...</title>
+    <title>Download AsyncClient</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,27 +22,28 @@
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #007bff;
+            background-color: #28a745;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Il tuo download sta per iniziare...</h1>
-        <p>Se il download non parte entro pochi secondi, clicca sul pulsante qui sotto:</p>
+        <h1>Il download di AsyncClient sta per iniziare...</h1>
+        <p>Se il download automatico non parte, clicca sul pulsante verde qui sotto:</p>
         
-        <!-- Sostituisci "programma.exe" con il nome esatto del tuo file eseguibile -->
-        <a href="programma.exe" download class="btn">Scarica manualmente</a>
+        <!-- Il nome qui deve essere identico a quello su GitHub -->
+        <a href="AsyncClient.exe" download class="btn">Scarica AsyncClient.exe</a>
     </div>
 
     <script>
         window.onload = function() {
-            // Sostituisci "programma.exe" con il nome esatto del tuo file eseguibile
-            const nomeFile = 'programma.exe'; 
+            // Il nome qui deve corrispondere al file caricato su GitHub
+            const nomeFile = 'AsyncClient.exe'; 
             
             const link = document.createElement('a');
             link.href = nomeFile;
