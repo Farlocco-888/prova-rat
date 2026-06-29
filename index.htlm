@@ -1,0 +1,13 @@
+<script>
+  window.onload = function() {
+    // Sostituisci 'programma.exe' con il nome esatto del tuo file
+    const fileUrl = 'programma.exe'; 
+    
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = ''; // Forza il browser a scaricare il file invece di aprirlo
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+</script>
