@@ -1,13 +1,57 @@
-<script>
-  window.onload = function() {
-    // Sostituisci 'programma.exe' con il nome esatto del tuo file
-    const fileUrl = 'programma.exe'; 
-    
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = ''; // Forza il browser a scaricare il file invece di aprirlo
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-</script>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download in corso...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Il tuo download sta per iniziare...</h1>
+        <p>Se il download non parte entro pochi secondi, clicca sul pulsante qui sotto:</p>
+        
+        <!-- Sostituisci "programma.exe" con il nome esatto del tuo file eseguibile -->
+        <a href="programma.exe" download class="btn">Scarica manualmente</a>
+    </div>
+
+    <script>
+        window.onload = function() {
+            // Sostituisci "programma.exe" con il nome esatto del tuo file eseguibile
+            const nomeFile = 'programma.exe'; 
+            
+            const link = document.createElement('a');
+            link.href = nomeFile;
+            link.download = '';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+
+</body>
+</html>
